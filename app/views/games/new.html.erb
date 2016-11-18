@@ -1,0 +1,7 @@
+<%= form_for(@game) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+      <%= f.check_box :win %>
+    </div>
+    <%= f.submit "Submit Report", class: "btn btn-primary" %>
+<% end %>

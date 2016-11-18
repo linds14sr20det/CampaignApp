@@ -10,8 +10,8 @@
   </aside>
   <div class="col-md-8">
     <% if @user.games.any? %>
-        <h3>Microposts (<%= @user.games.count %>)</h3>
-        <ol class="microposts">
+        <h3>Games (<%= @user.games.count %>)</h3>
+        <ol class="games">
           <%= render @games %>
         </ol>
         <%= will_paginate @games %>
