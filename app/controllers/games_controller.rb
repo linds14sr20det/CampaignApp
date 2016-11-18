@@ -1,8 +1,15 @@
 class GamesController < ApplicationController
   before_action :logged_in_user, only: [:new, :create, :destroy]
 
+  def index
+    @games = Game.paginate(page: params[:page])
+    @armies = Army.all
+  end
+
   def new
     @game = Game.new
+    @armies = Army.all
+    @locations = Location.all
   end
 
   def create
@@ -21,6 +28,6 @@ class GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:location, :win)
+    params.require(:game).permit(:location_id, :win, :user_army_id, :opponent_army_id)
   end
 end

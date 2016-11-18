@@ -246,3 +246,24 @@ span.picture {
     }
   }
 }
+
+.pagination {
+  margin: 7px 0 0 0;
+}
+
+.pagination-centered {
+  margin: 0 auto !important;
+  display: table;
+}
+
+.row-bordered:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+.sg-games-create {
+  margin-bottom: 10px;
+}
+
+

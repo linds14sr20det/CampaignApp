@@ -1,18 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Create Locations and Armies. These shouldn't change after initial deploy
 
-User.create!(name:  "Example User",
-             email: "test@test.ca",
-             password:              "password",
-             password_confirmation: "password",
-             admin: true,
-             activated: true,
-             activated_at: Time.zone.now)
+Location.create(name: "City1")
+
+Army.create(name: "UCM")
+Army.create(name: "Scourge")
+Army.create(name: "PHR")
+Army.create(name: "Shaltari")
+Army.create(name: "Resistance (Allied)")
+Army.create(name: "Resistance (Feral)")
+
+# Create a bunch of test accounts
 
 99.times do |n|
   name  = Faker::Name.name
@@ -26,10 +23,11 @@ User.create!(name:  "Example User",
                activated_at: Time.zone.now)
 end
 
-Location.create(name: "City1")
-
 users = User.order(:created_at).take(6)
 location = Location.first
+user_army = Army.find(1)
+opponent_army = Army.find(2)
+
 50.times do
-  users.each { |user| user.games.create!(win: true, location_id: location.id) }
+  users.each { |user| user.games.create!(win: true, location_id: location.id, user_army_id: user_army.id, opponent_army_id: opponent_army.id) }
 end

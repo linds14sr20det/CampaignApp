@@ -1,7 +1,16 @@
 <li id="micropost-<%= game.id %>">
   <%= link_to gravatar_for(game.user, size: 50), game.user %>
   <span class="user"><%= link_to game.user.name, game.user %></span>
-  <span class="content"><%= game.location.name %></span>
+  <% if game.win %>
+      won
+  <% else %>
+      lost
+  <% end %>
+  a battle for <span class="content"><%= game.location.name %></span> with
+  <span class="content"><%= @armies.find(game.user_army_id).name %></span>
+  against the
+  <span class="content"><%= @armies.find(game.opponent_army_id).name %></span>.
+  <br>
   <span class="timestamp">
     Reported <%= time_ago_in_words(game.created_at) %> ago.
   </span>

@@ -1,7 +1,15 @@
 <%= form_for(@game) do |f| %>
-    <%= render 'shared/error_messages', object: f.object %>
-    <div class="field">
-      <%= f.check_box :win %>
-    </div>
-    <%= f.submit "Submit Report", class: "btn btn-primary" %>
+  <%= render 'shared/error_messages', object: f.object %>
+    <%= f.label :location_id, 'Where was this battle fought?' %>
+    <%= f.select(:location_id, @locations.collect {|a| [a.name, a.id]}) %>
+
+    <%= f.label :win, 'Did you win this game?' %>
+    <%= f.check_box :win %>
+
+    <%= f.label :user_army_id, 'What faction did you play?' %>
+    <%= f.select(:user_army_id, @armies.collect {|a| [a.name, a.id]}) %>
+
+    <%= f.label :opponent_army_id, 'What faction did your opponent play?' %>
+    <%= f.select(:opponent_army_id, @armies.collect {|a| [a.name, a.id]}) %>
+  <%= f.submit "Submit Report", class: "btn btn-primary" %>
 <% end %>
