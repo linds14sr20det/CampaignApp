@@ -25,3 +25,11 @@ User.create!(name:  "Example User",
                activated: true,
                activated_at: Time.zone.now)
 end
+
+Location.create(name: "City1")
+
+users = User.order(:created_at).take(6)
+location = Location.first
+50.times do
+  users.each { |user| user.games.create!(win: true, location_id: location.id) }
+end

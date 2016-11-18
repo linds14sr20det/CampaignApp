@@ -1,229 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="Rails campaign_app: development">
   <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
-    <database id="1" name="campaignapp_dev">
-      <object-id>331533</object-id>
-      <visible>1</visible>
-    </database>
-    <database id="2" name="postgres">
+    <database id="1" name="postgres">
       <object-id>12403</object-id>
     </database>
-    <database id="3" name="slind">
+    <database id="2" name="slind">
       <object-id>16384</object-id>
     </database>
-    <database id="4" name="jobber_dev">
+    <database id="3" name="jobber_dev">
       <object-id>370643</object-id>
     </database>
+    <database id="4" name="campaignapp_dev">
+      <object-id>751082</object-id>
+      <visible>1</visible>
+    </database>
     <database id="5" name="jobber_test">
-      <object-id>658532</object-id>
+      <object-id>704825</object-id>
     </database>
     <database id="6" name="jobber_test2">
-      <object-id>660370</object-id>
+      <object-id>706701</object-id>
     </database>
     <database id="7" name="jobber_test3">
-      <object-id>662210</object-id>
+      <object-id>708575</object-id>
     </database>
     <database id="8" name="jobber_test4">
-      <object-id>664050</object-id>
+      <object-id>710451</object-id>
     </database>
     <database id="9" name="jobber_test5">
-      <object-id>665890</object-id>
+      <object-id>712327</object-id>
     </database>
     <database id="10" name="jobber_test6">
-      <object-id>667730</object-id>
+      <object-id>714203</object-id>
     </database>
     <database id="11" name="jobber_test7">
-      <object-id>669570</object-id>
+      <object-id>716079</object-id>
     </database>
     <database id="12" name="jobber_test8">
-      <object-id>671410</object-id>
+      <object-id>717955</object-id>
     </database>
     <database id="13" name="campaignapp_test">
-      <object-id>704457</object-id>
+      <object-id>751083</object-id>
     </database>
-    <schema id="14" parent="1" name="public">
+    <schema id="14" parent="4" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>1132541</introspection-state-number>
-      <introspection-timestamp>2016-11-16.16:33:03.062</introspection-timestamp>
+      <introspection-state-number>1217655</introspection-state-number>
+      <introspection-timestamp>2016-11-17.16:26:32.164</introspection-timestamp>
     </schema>
-    <schema id="15" parent="1" name="pg_catalog">
+    <schema id="15" parent="4" name="pg_catalog">
       <object-id>11</object-id>
     </schema>
-    <schema id="16" parent="1" name="pg_toast">
+    <schema id="16" parent="4" name="pg_toast">
       <object-id>99</object-id>
     </schema>
-    <schema id="17" parent="1" name="pg_temp_1">
+    <schema id="17" parent="4" name="pg_temp_1">
       <object-id>11320</object-id>
     </schema>
-    <schema id="18" parent="1" name="pg_toast_temp_1">
+    <schema id="18" parent="4" name="pg_toast_temp_1">
       <object-id>11321</object-id>
     </schema>
-    <schema id="19" parent="1" name="information_schema">
+    <schema id="19" parent="4" name="information_schema">
       <object-id>11853</object-id>
     </schema>
     <sequence id="20" parent="14" name="games_id_seq">
-      <object-id>517123</object-id>
-      <state-number>931376</state-number>
+      <object-id>751141</object-id>
+      <state-number>1217655</state-number>
     </sequence>
-    <sequence id="21" parent="14" name="users_id_seq">
-      <object-id>517112</object-id>
-      <state-number>931372</state-number>
+    <sequence id="21" parent="14" name="locations_id_seq">
+      <object-id>751130</object-id>
+      <state-number>1217654</state-number>
     </sequence>
-    <table id="22" parent="14" name="ar_internal_metadata">
-      <object-id>517104</object-id>
-      <state-number>931371</state-number>
+    <sequence id="22" parent="14" name="users_id_seq">
+      <object-id>751100</object-id>
+      <state-number>1217647</state-number>
+    </sequence>
+    <table id="23" parent="14" name="ar_internal_metadata">
+      <object-id>751092</object-id>
+      <state-number>1217646</state-number>
     </table>
-    <table id="23" parent="14" name="games">
-      <object-id>517125</object-id>
-      <state-number>931376</state-number>
+    <table id="24" parent="14" name="games">
+      <object-id>751143</object-id>
+      <state-number>1217655</state-number>
     </table>
-    <table id="24" parent="14" name="schema_migrations">
-      <object-id>517096</object-id>
-      <state-number>931370</state-number>
+    <table id="25" parent="14" name="locations">
+      <object-id>751132</object-id>
+      <state-number>1217655</state-number>
     </table>
-    <table id="25" parent="14" name="users">
-      <object-id>517114</object-id>
-      <state-number>1132541</state-number>
+    <table id="26" parent="14" name="schema_migrations">
+      <object-id>751084</object-id>
+      <state-number>1217645</state-number>
     </table>
-    <column id="26" parent="22" name="key">
-      <state-number>931371</state-number>
+    <table id="27" parent="14" name="users">
+      <object-id>751102</object-id>
+      <state-number>1217655</state-number>
+    </table>
+    <column id="28" parent="23" name="key">
+      <state-number>1217646</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="27" parent="22" name="value">
-      <state-number>931371</state-number>
+    <column id="29" parent="23" name="value">
+      <state-number>1217646</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="28" parent="22" name="created_at">
-      <state-number>931371</state-number>
+    <column id="30" parent="23" name="created_at">
+      <state-number>1217646</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="29" parent="22" name="updated_at">
-      <state-number>931371</state-number>
+    <column id="31" parent="23" name="updated_at">
+      <state-number>1217646</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="30" parent="22" name="ar_internal_metadata_pkey">
-      <object-id>517110</object-id>
+    <index id="32" parent="23" name="ar_internal_metadata_pkey">
+      <object-id>751098</object-id>
       <columns>key</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="31" parent="22" name="ar_internal_metadata_pkey">
-      <object-id>517111</object-id>
+    <key id="33" parent="23" name="ar_internal_metadata_pkey">
+      <object-id>751099</object-id>
       <columns>key</columns>
       <underlying-index>ar_internal_metadata_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="32" parent="23" name="id">
-      <state-number>931376</state-number>
+    <column id="34" parent="24" name="id">
+      <state-number>1217655</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;games_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="33" parent="23" name="attacker">
-      <state-number>931376</state-number>
+    <column id="35" parent="24" name="win">
+      <state-number>1217655</state-number>
+      <data-type>boolean|0</data-type>
+    </column>
+    <column id="36" parent="24" name="user_id">
+      <state-number>1217655</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="34" parent="23" name="defender">
-      <state-number>931376</state-number>
+    <column id="37" parent="24" name="location_id">
+      <state-number>1217655</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="35" parent="23" name="winner">
-      <state-number>931376</state-number>
-      <data-type>integer|0</data-type>
-    </column>
-    <column id="36" parent="23" name="location">
-      <state-number>931376</state-number>
-      <data-type>integer|0</data-type>
-    </column>
-    <column id="37" parent="23" name="created_at">
-      <state-number>931376</state-number>
+    <column id="38" parent="24" name="created_at">
+      <state-number>1217655</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="38" parent="23" name="updated_at">
-      <state-number>931376</state-number>
+    <column id="39" parent="24" name="updated_at">
+      <state-number>1217655</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="39" parent="23" name="games_pkey">
-      <object-id>517129</object-id>
+    <index id="40" parent="24" name="games_pkey">
+      <object-id>751147</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="40" parent="23" name="games_pkey">
-      <object-id>517130</object-id>
+    <index id="41" parent="24" name="index_games_on_user_id_and_created_at">
+      <object-id>751161</object-id>
+      <columns>user_id
+created_at</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="42" parent="24" name="index_games_on_user_id">
+      <object-id>751159</object-id>
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="43" parent="24" name="index_games_on_location_id_and_created_at">
+      <object-id>751162</object-id>
+      <columns>location_id
+created_at</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="44" parent="24" name="index_games_on_location_id">
+      <object-id>751160</object-id>
+      <columns>location_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="45" parent="24" name="games_pkey">
+      <object-id>751148</object-id>
       <columns>id</columns>
       <underlying-index>games_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="41" parent="24" name="version">
-      <state-number>931370</state-number>
-      <mandatory>1</mandatory>
-      <data-type>varchar|0</data-type>
-    </column>
-    <index id="42" parent="24" name="schema_migrations_pkey">
-      <object-id>517102</object-id>
-      <columns>version</columns>
-      <desc-columns></desc-columns>
-      <unique>1</unique>
-    </index>
-    <key id="43" parent="24" name="schema_migrations_pkey">
-      <object-id>517103</object-id>
-      <columns>version</columns>
-      <underlying-index>schema_migrations_pkey</underlying-index>
-      <primary>1</primary>
-    </key>
-    <column id="44" parent="25" name="id">
-      <state-number>931372</state-number>
+    <foreign-key id="46" parent="24" name="fk_rails_de9e6ea7f7">
+      <object-id>751149</object-id>
+      <columns>user_id</columns>
+      <ref-key>~.users.users_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="47" parent="24" name="fk_rails_d35c8ddede">
+      <object-id>751154</object-id>
+      <columns>location_id</columns>
+      <ref-key>~.locations.locations_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="48" parent="25" name="id">
+      <state-number>1217654</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
-      <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
+      <default-expression>nextval(&apos;locations_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="45" parent="25" name="name">
-      <state-number>931372</state-number>
-      <data-type>varchar|0</data-type>
+    <column id="49" parent="25" name="name">
+      <state-number>1217654</state-number>
+      <data-type>text|0</data-type>
     </column>
-    <column id="46" parent="25" name="email">
-      <state-number>931372</state-number>
-      <data-type>varchar|0</data-type>
-    </column>
-    <column id="47" parent="25" name="created_at">
-      <state-number>931372</state-number>
+    <column id="50" parent="25" name="created_at">
+      <state-number>1217654</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="48" parent="25" name="updated_at">
-      <state-number>931372</state-number>
+    <column id="51" parent="25" name="updated_at">
+      <state-number>1217654</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="49" parent="25" name="password_digest">
-      <state-number>939258</state-number>
-      <data-type>varchar|0</data-type>
-    </column>
-    <column id="50" parent="25" name="remember_digest">
-      <state-number>1132541</state-number>
-      <data-type>varchar|0</data-type>
-    </column>
-    <index id="51" parent="25" name="users_pkey">
-      <object-id>517121</object-id>
+    <index id="52" parent="25" name="locations_pkey">
+      <object-id>751139</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="52" parent="25" name="index_users_on_email">
-      <object-id>541312</object-id>
+    <key id="53" parent="25" name="locations_pkey">
+      <object-id>751140</object-id>
+      <columns>id</columns>
+      <underlying-index>locations_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="54" parent="26" name="version">
+      <state-number>1217645</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar|0</data-type>
+    </column>
+    <index id="55" parent="26" name="schema_migrations_pkey">
+      <object-id>751090</object-id>
+      <columns>version</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="56" parent="26" name="schema_migrations_pkey">
+      <object-id>751091</object-id>
+      <columns>version</columns>
+      <underlying-index>schema_migrations_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="57" parent="27" name="id">
+      <state-number>1217647</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="58" parent="27" name="name">
+      <state-number>1217647</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="59" parent="27" name="email">
+      <state-number>1217647</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="60" parent="27" name="created_at">
+      <state-number>1217647</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="61" parent="27" name="updated_at">
+      <state-number>1217647</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="62" parent="27" name="password_digest">
+      <state-number>1217649</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="63" parent="27" name="remember_digest">
+      <state-number>1217650</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="64" parent="27" name="admin">
+      <state-number>1217651</state-number>
+      <data-type>boolean|0</data-type>
+      <default-expression>false</default-expression>
+    </column>
+    <column id="65" parent="27" name="activation_digest">
+      <state-number>1217652</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="66" parent="27" name="activated">
+      <state-number>1217652</state-number>
+      <data-type>boolean|0</data-type>
+      <default-expression>false</default-expression>
+    </column>
+    <column id="67" parent="27" name="activated_at">
+      <state-number>1217652</state-number>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="68" parent="27" name="reset_digest">
+      <state-number>1217653</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="69" parent="27" name="reset_sent_at">
+      <state-number>1217653</state-number>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="70" parent="27" name="users_pkey">
+      <object-id>751109</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="71" parent="27" name="index_users_on_email">
+      <object-id>751111</object-id>
       <columns>email</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="53" parent="25" name="users_pkey">
-      <object-id>517122</object-id>
+    <key id="72" parent="27" name="users_pkey">
+      <object-id>751110</object-id>
       <columns>id</columns>
       <underlying-index>users_pkey</underlying-index>
       <primary>1</primary>
