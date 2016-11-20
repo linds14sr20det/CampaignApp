@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :locations
   root   'application#home'
   get    '/report',  to: 'static_pages#report'
   get    '/about',   to: 'static_pages#about'
