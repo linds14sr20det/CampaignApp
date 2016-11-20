@@ -5,5 +5,15 @@
   <%= @location.name %>
 </p>
 
+<div class="col-md-8">
+  <% if @location.games.any? %>
+      <h3>Games (<%= @location.games.count %>)</h3>
+      <ol class="games">
+        <%= render @games %>
+      </ol>
+      <%= will_paginate @games %>
+  <% end %>
+</div>
+
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>

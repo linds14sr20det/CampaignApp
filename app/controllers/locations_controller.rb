@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
   before_action :set_location, only: [:show, :edit, :update, :destroy]
-  before_action :admin_user,     only: :destroy
+  before_action :admin_user,   only: [:destroy, :edit, :update]
 
   # GET /locations
   # GET /locations.json
@@ -11,6 +11,8 @@ class LocationsController < ApplicationController
   # GET /locations/1
   # GET /locations/1.json
   def show
+    @games = @location.games.paginate(page: params[:page], :per_page => 12)
+    @armies = Army.all
   end
 
   # GET /locations/new

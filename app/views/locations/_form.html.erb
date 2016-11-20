@@ -1,22 +1,7 @@
 <%= form_for(location) do |f| %>
-  <% if location.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(location.errors.count, "error") %> prohibited this location from being saved:</h2>
-
-      <ul>
-      <% location.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
+    <%= render 'shared/error_messages', object: f.object %>
     <%= f.label :name %>
-    <%= f.text_area :name %>
-  </div>
+    <%= f.text_area :name, class: 'form-control' %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
