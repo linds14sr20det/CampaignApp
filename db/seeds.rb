@@ -1,6 +1,10 @@
 # Create Locations and Armies. These shouldn't change after initial deploy
 
-Location.create(name: "City1")
+Location.create(name: "Eastern Port")
+Location.create(name: "Space Port")
+Location.create(name: "Mesa Prime")
+Location.create(name: "Hab Blocks")
+Location.create(name: "Old City")
 
 Army.create(name: "UCM")
 Army.create(name: "Scourge")
