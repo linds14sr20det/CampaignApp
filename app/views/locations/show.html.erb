@@ -1,19 +1,70 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+  $(function () {
+    Highcharts.chart('container', {
+      chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: 0,
+        plotShadow: false
+      },
+      title: {
+        text: 'Controlling<br>Faction',
+        align: 'center',
+        verticalAlign: 'middle',
+        y: 40
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          dataLabels: {
+            enabled: true,
+            distance: -50,
+            style: {
+              fontWeight: 'bold',
+              color: 'white'
+            }
+          },
+          startAngle: -90,
+          endAngle: 90,
+          center: ['50%', '75%']
+        }
+      },
+      series: [{
+        type: 'pie',
+        name: 'Control Percentage',
+        innerSize: '50%',
+        data: [
+          <% @army_stats.each do |d| %>
+            [ '<%=d[0]%>', <%=d[1].to_f/@total%> ],
+          <% end %>
+        ]
+      }]
+    });
+  });
+
+</script>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @location.name %>
-</p>
-
-<div class="col-md-8">
-  <% if @location.games.any? %>
-      <h3>Games (<%= @location.games.count %>)</h3>
-      <ol class="games">
-        <%= render @games %>
-      </ol>
-      <%= will_paginate @games %>
-  <% end %>
+<div class="row">
+<h1><%= @location.name %></h1>
 </div>
 
-<%= link_to 'Edit', edit_location_path(@location) %> |
+<div class="row">
+  <div class="col-md-4">
+    <div id="container" style="min-width: 510px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-7">
+    <% if @location.games.any? %>
+        <h3>Games (<%= @location.games.count %>)</h3>
+        <ol class="games">
+          <%= render @games %>
+        </ol>
+        <%= will_paginate @games %>
+    <% end %>
+  </div>
+</div>
 <%= link_to 'Back', locations_path %>
