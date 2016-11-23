@@ -266,6 +266,21 @@ span.picture {
   margin-bottom: 10px
 }
 
+.title-with-button {
+  display:block;
+  margin:auto;
+}
+
+.button-in-title {
+  position:absolute;
+  top: 20px;
+  right:0;
+}
+
+.sg-games-games-create {
+  float: right;
+}
+
 .map {
   display: block;
   margin: 0 auto;

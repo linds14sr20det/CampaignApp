@@ -39,9 +39,13 @@
         name: 'Control Percentage',
         innerSize: '50%',
         data: [
-          <% @army_stats.each do |d| %>
-            [ '<%=d[0]%>', <%=d[1].to_f/@total%> ],
-          <% end %>
+            <% if @army_stats.any? %>
+              <% @army_stats.each do |d| %>
+                [ '<%=d[0]%>', <%=d[1].to_f/@total%> ],
+              <% end %>
+            <%else%>
+            ["None", 1]
+            <%end%>
         ]
       }]
     });
@@ -52,7 +56,12 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-<h1><%= @location.name %></h1>
+  <div class="col-md-12">
+    <div class="title-with-button"><h1><%= @location.name %></h1></div>
+    <div class="button-in-title">
+      <%= link_to "Report results for this location!", new_game_path({:id => @location.id }), class: "btn btn-lg btn-primary sg-games-games-create"%>
+    </div>
+  </div>
 </div>
 
 <div class="row">
@@ -62,11 +71,30 @@
   <div class="col-md-1"></div>
   <div class="col-md-7">
     <% if @location.games.any? %>
-        <h3>Games (<%= @location.games.count %>)</h3>
-        <ol class="games">
-          <%= render @games %>
-        </ol>
-        <%= will_paginate @games %>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Games (<%= @location.games.count %>)</h3>
+          </div>
+        </div>
+        <div class="row row-bordered">
+          <div class="col-lg-12"><%= will_paginate @games %></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <ol class="games">
+              <%= render @games %>
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><%= will_paginate @games %></div>
+        </div>
+    <% else %>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Games (0)</h3>
+          </div>
+        </div>
     <% end %>
   </div>
 </div>

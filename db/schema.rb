@@ -22,13 +22,13 @@ ActiveRecord::Schema.define(version: 20161122184613) do
   end
 
   create_table "games", force: :cascade do |t|
-    t.boolean  "win"
+    t.boolean  "win",              null: false
     t.integer  "user_id"
     t.integer  "location_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.integer  "user_army_id"
-    t.integer  "opponent_army_id"
+    t.integer  "user_army_id",     null: false
+    t.integer  "opponent_army_id", null: false
     t.integer  "game_score"
     t.index ["location_id", "created_at"], name: "index_games_on_location_id_and_created_at", using: :btree
     t.index ["location_id"], name: "index_games_on_location_id", using: :btree

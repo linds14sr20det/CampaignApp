@@ -1,0 +1,17 @@
+<%= form_for(@game, {class: ''}) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+
+    <%= f.label :location_id, 'Where was this battle fought?' %>
+    <%= f.select :location_id, options_from_collection_for_select(Location.order(:name).all, "id", "name", params[:id]), {:prompt => "Location..."}, {class: 'form-control'} %>
+
+    <%= f.label :win, 'Did you win this game?'%>
+    <%= f.select :win, [['Yes', true], ['No', false]], {:prompt => "Please pick an outcome..."}, {class: 'form-control'} %>
+
+    <%= f.label :user_army_id, 'What faction did you play?' %>
+    <%= f.select(:user_army_id, options_from_collection_for_select(Army.order(:name).all, "id", "name",), {:prompt => "Your Army..."}, {class: 'form-control'}) %>
+
+    <%= f.label :opponent_army_id, 'What faction did your opponent play?' %>
+    <%= f.select(:opponent_army_id, options_from_collection_for_select(Army.order(:name).all, "id", "name",), {:prompt => "Your Opponent's Army..."}, {class: 'form-control'}) %>
+
+    <%= f.submit "Submit Report", class: "btn btn-primary" %>
+<% end %>

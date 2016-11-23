@@ -1,7 +1,7 @@
 class CreateGames < ActiveRecord::Migration[5.0]
   def change
     create_table :games do |t|
-      t.boolean :win
+      t.boolean :win, :null => false
       t.references :user, foreign_key: true
       t.references :location, foreign_key: true
 

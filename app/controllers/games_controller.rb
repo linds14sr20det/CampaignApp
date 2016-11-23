@@ -22,7 +22,7 @@ class GamesController < ApplicationController
       flash[:success] = "Game created!"
       redirect_to root_url
     else
-      redirect_to root_url
+      render 'new'
     end
   end
 
