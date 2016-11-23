@@ -8,378 +8,378 @@
       <object-id>16384</object-id>
     </database>
     <database id="3" name="jobber_dev">
-      <object-id>370643</object-id>
+      <object-id>930488</object-id>
     </database>
-    <database id="4" name="jobber_test">
-      <object-id>751552</object-id>
-    </database>
-    <database id="5" name="jobber_test2">
-      <object-id>753428</object-id>
-    </database>
-    <database id="6" name="jobber_test3">
-      <object-id>755304</object-id>
-    </database>
-    <database id="7" name="jobber_test4">
-      <object-id>757180</object-id>
-    </database>
-    <database id="8" name="jobber_test5">
-      <object-id>759056</object-id>
-    </database>
-    <database id="9" name="jobber_test6">
-      <object-id>760932</object-id>
-    </database>
-    <database id="10" name="jobber_test7">
-      <object-id>762808</object-id>
-    </database>
-    <database id="11" name="jobber_test8">
-      <object-id>764682</object-id>
-    </database>
-    <database id="12" name="campaignapp_dev">
-      <object-id>847746</object-id>
+    <database id="4" name="campaignapp_dev">
+      <object-id>1026512</object-id>
       <visible>1</visible>
+    </database>
+    <database id="5" name="jobber_test">
+      <object-id>974976</object-id>
+    </database>
+    <database id="6" name="jobber_test2">
+      <object-id>976814</object-id>
+    </database>
+    <database id="7" name="jobber_test3">
+      <object-id>978654</object-id>
+    </database>
+    <database id="8" name="jobber_test4">
+      <object-id>980494</object-id>
+    </database>
+    <database id="9" name="jobber_test5">
+      <object-id>982334</object-id>
+    </database>
+    <database id="10" name="jobber_test6">
+      <object-id>984174</object-id>
+    </database>
+    <database id="11" name="jobber_test7">
+      <object-id>986014</object-id>
+    </database>
+    <database id="12" name="jobber_test8">
+      <object-id>987854</object-id>
     </database>
     <database id="13" name="campaignapp_test">
-      <object-id>847747</object-id>
+      <object-id>1026513</object-id>
     </database>
-    <schema id="14" parent="12" name="public">
+    <schema id="14" parent="4" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>1545912</introspection-state-number>
-      <introspection-timestamp>2016-11-20.00:08:12.712</introspection-timestamp>
+      <introspection-state-number>1884015</introspection-state-number>
+      <introspection-timestamp>2016-11-22.17:18:00.089</introspection-timestamp>
     </schema>
-    <schema id="15" parent="12" name="pg_catalog">
+    <schema id="15" parent="4" name="pg_catalog">
       <object-id>11</object-id>
     </schema>
-    <schema id="16" parent="12" name="pg_toast">
+    <schema id="16" parent="4" name="pg_toast">
       <object-id>99</object-id>
     </schema>
-    <schema id="17" parent="12" name="pg_temp_1">
+    <schema id="17" parent="4" name="pg_temp_1">
       <object-id>11320</object-id>
     </schema>
-    <schema id="18" parent="12" name="pg_toast_temp_1">
+    <schema id="18" parent="4" name="pg_toast_temp_1">
       <object-id>11321</object-id>
     </schema>
-    <schema id="19" parent="12" name="information_schema">
+    <schema id="19" parent="4" name="information_schema">
       <object-id>11853</object-id>
     </schema>
     <sequence id="20" parent="14" name="armies_id_seq">
-      <object-id>847827</object-id>
-      <state-number>1545911</state-number>
+      <object-id>1026593</object-id>
+      <state-number>1884014</state-number>
     </sequence>
     <sequence id="21" parent="14" name="games_id_seq">
-      <object-id>847805</object-id>
-      <state-number>1545910</state-number>
+      <object-id>1026571</object-id>
+      <state-number>1884013</state-number>
     </sequence>
     <sequence id="22" parent="14" name="locations_id_seq">
-      <object-id>847794</object-id>
-      <state-number>1545909</state-number>
+      <object-id>1026560</object-id>
+      <state-number>1884012</state-number>
     </sequence>
     <sequence id="23" parent="14" name="users_id_seq">
-      <object-id>847764</object-id>
-      <state-number>1545902</state-number>
+      <object-id>1026530</object-id>
+      <state-number>1884005</state-number>
     </sequence>
     <table id="24" parent="14" name="ar_internal_metadata">
-      <object-id>847756</object-id>
-      <state-number>1545901</state-number>
+      <object-id>1026522</object-id>
+      <state-number>1884004</state-number>
     </table>
     <table id="25" parent="14" name="armies">
-      <object-id>847829</object-id>
-      <state-number>1545911</state-number>
+      <object-id>1026595</object-id>
+      <state-number>1884014</state-number>
     </table>
     <table id="26" parent="14" name="games">
-      <object-id>847807</object-id>
-      <state-number>1545912</state-number>
+      <object-id>1026573</object-id>
+      <state-number>1884015</state-number>
     </table>
     <table id="27" parent="14" name="locations">
-      <object-id>847796</object-id>
-      <state-number>1545910</state-number>
+      <object-id>1026562</object-id>
+      <state-number>1884013</state-number>
     </table>
     <table id="28" parent="14" name="schema_migrations">
-      <object-id>847748</object-id>
-      <state-number>1545900</state-number>
+      <object-id>1026514</object-id>
+      <state-number>1884003</state-number>
     </table>
     <table id="29" parent="14" name="users">
-      <object-id>847766</object-id>
-      <state-number>1545910</state-number>
+      <object-id>1026532</object-id>
+      <state-number>1884013</state-number>
     </table>
     <column id="30" parent="24" name="key">
-      <state-number>1545901</state-number>
+      <state-number>1884004</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar|0</data-type>
     </column>
     <column id="31" parent="24" name="value">
-      <state-number>1545901</state-number>
+      <state-number>1884004</state-number>
       <data-type>varchar|0</data-type>
     </column>
     <column id="32" parent="24" name="created_at">
-      <state-number>1545901</state-number>
+      <state-number>1884004</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="33" parent="24" name="updated_at">
-      <state-number>1545901</state-number>
+      <state-number>1884004</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <index id="34" parent="24" name="ar_internal_metadata_pkey">
-      <object-id>847762</object-id>
+      <object-id>1026528</object-id>
       <columns>key</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <key id="35" parent="24" name="ar_internal_metadata_pkey">
-      <object-id>847763</object-id>
+      <object-id>1026529</object-id>
       <columns>key</columns>
       <underlying-index>ar_internal_metadata_pkey</underlying-index>
       <primary>1</primary>
     </key>
     <column id="36" parent="25" name="id">
-      <state-number>1545911</state-number>
+      <state-number>1884014</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;armies_id_seq&apos;::regclass)</default-expression>
     </column>
     <column id="37" parent="25" name="name">
-      <state-number>1545911</state-number>
+      <state-number>1884014</state-number>
       <data-type>text|0</data-type>
     </column>
     <column id="38" parent="25" name="created_at">
-      <state-number>1545911</state-number>
+      <state-number>1884014</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="39" parent="25" name="updated_at">
-      <state-number>1545911</state-number>
+      <state-number>1884014</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <index id="40" parent="25" name="armies_pkey">
-      <object-id>847836</object-id>
+      <object-id>1026602</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <key id="41" parent="25" name="armies_pkey">
-      <object-id>847837</object-id>
+      <object-id>1026603</object-id>
       <columns>id</columns>
       <underlying-index>armies_pkey</underlying-index>
       <primary>1</primary>
     </key>
     <column id="42" parent="26" name="id">
-      <state-number>1545910</state-number>
+      <state-number>1884013</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;games_id_seq&apos;::regclass)</default-expression>
     </column>
     <column id="43" parent="26" name="win">
-      <state-number>1545910</state-number>
+      <state-number>1884013</state-number>
       <data-type>boolean|0</data-type>
     </column>
     <column id="44" parent="26" name="user_id">
-      <state-number>1545910</state-number>
+      <state-number>1884013</state-number>
       <data-type>integer|0</data-type>
     </column>
     <column id="45" parent="26" name="location_id">
-      <state-number>1545910</state-number>
+      <state-number>1884013</state-number>
       <data-type>integer|0</data-type>
     </column>
     <column id="46" parent="26" name="created_at">
-      <state-number>1545910</state-number>
+      <state-number>1884013</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="47" parent="26" name="updated_at">
-      <state-number>1545910</state-number>
+      <state-number>1884013</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="48" parent="26" name="user_army_id">
-      <state-number>1545912</state-number>
+      <state-number>1884015</state-number>
       <data-type>integer|0</data-type>
     </column>
     <column id="49" parent="26" name="opponent_army_id">
-      <state-number>1545912</state-number>
+      <state-number>1884015</state-number>
       <data-type>integer|0</data-type>
     </column>
     <index id="50" parent="26" name="games_pkey">
-      <object-id>847811</object-id>
+      <object-id>1026577</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <index id="51" parent="26" name="index_games_on_user_id_and_created_at">
-      <object-id>847825</object-id>
+      <object-id>1026591</object-id>
       <columns>user_id
 created_at</columns>
       <desc-columns></desc-columns>
     </index>
     <index id="52" parent="26" name="index_games_on_user_id">
-      <object-id>847823</object-id>
+      <object-id>1026589</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
     <index id="53" parent="26" name="index_games_on_location_id_and_created_at">
-      <object-id>847826</object-id>
+      <object-id>1026592</object-id>
       <columns>location_id
 created_at</columns>
       <desc-columns></desc-columns>
     </index>
     <index id="54" parent="26" name="index_games_on_location_id">
-      <object-id>847824</object-id>
+      <object-id>1026590</object-id>
       <columns>location_id</columns>
       <desc-columns></desc-columns>
     </index>
     <index id="55" parent="26" name="index_games_on_user_army_id">
-      <object-id>847838</object-id>
+      <object-id>1026604</object-id>
       <columns>user_army_id</columns>
       <desc-columns></desc-columns>
     </index>
     <index id="56" parent="26" name="index_games_on_opponent_army_id">
-      <object-id>847839</object-id>
+      <object-id>1026605</object-id>
       <columns>opponent_army_id</columns>
       <desc-columns></desc-columns>
     </index>
     <key id="57" parent="26" name="games_pkey">
-      <object-id>847812</object-id>
+      <object-id>1026578</object-id>
       <columns>id</columns>
       <underlying-index>games_pkey</underlying-index>
       <primary>1</primary>
     </key>
     <foreign-key id="58" parent="26" name="fk_rails_de9e6ea7f7">
-      <object-id>847813</object-id>
+      <object-id>1026579</object-id>
       <columns>user_id</columns>
       <ref-key>~.users.users_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
     <foreign-key id="59" parent="26" name="fk_rails_d35c8ddede">
-      <object-id>847818</object-id>
+      <object-id>1026584</object-id>
       <columns>location_id</columns>
       <ref-key>~.locations.locations_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
     <column id="60" parent="27" name="id">
-      <state-number>1545909</state-number>
+      <state-number>1884012</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;locations_id_seq&apos;::regclass)</default-expression>
     </column>
     <column id="61" parent="27" name="name">
-      <state-number>1545909</state-number>
+      <state-number>1884012</state-number>
       <data-type>text|0</data-type>
     </column>
     <column id="62" parent="27" name="created_at">
-      <state-number>1545909</state-number>
+      <state-number>1884012</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="63" parent="27" name="updated_at">
-      <state-number>1545909</state-number>
+      <state-number>1884012</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <index id="64" parent="27" name="locations_pkey">
-      <object-id>847803</object-id>
+      <object-id>1026569</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <key id="65" parent="27" name="locations_pkey">
-      <object-id>847804</object-id>
+      <object-id>1026570</object-id>
       <columns>id</columns>
       <underlying-index>locations_pkey</underlying-index>
       <primary>1</primary>
     </key>
     <column id="66" parent="28" name="version">
-      <state-number>1545900</state-number>
+      <state-number>1884003</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar|0</data-type>
     </column>
     <index id="67" parent="28" name="schema_migrations_pkey">
-      <object-id>847754</object-id>
+      <object-id>1026520</object-id>
       <columns>version</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <key id="68" parent="28" name="schema_migrations_pkey">
-      <object-id>847755</object-id>
+      <object-id>1026521</object-id>
       <columns>version</columns>
       <underlying-index>schema_migrations_pkey</underlying-index>
       <primary>1</primary>
     </key>
     <column id="69" parent="29" name="id">
-      <state-number>1545902</state-number>
+      <state-number>1884005</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
     </column>
     <column id="70" parent="29" name="name">
-      <state-number>1545902</state-number>
+      <state-number>1884005</state-number>
       <data-type>varchar|0</data-type>
     </column>
     <column id="71" parent="29" name="email">
-      <state-number>1545902</state-number>
+      <state-number>1884005</state-number>
       <data-type>varchar|0</data-type>
     </column>
     <column id="72" parent="29" name="created_at">
-      <state-number>1545902</state-number>
+      <state-number>1884005</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="73" parent="29" name="updated_at">
-      <state-number>1545902</state-number>
+      <state-number>1884005</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="74" parent="29" name="password_digest">
-      <state-number>1545904</state-number>
+      <state-number>1884007</state-number>
       <data-type>varchar|0</data-type>
     </column>
     <column id="75" parent="29" name="remember_digest">
-      <state-number>1545905</state-number>
+      <state-number>1884008</state-number>
       <data-type>varchar|0</data-type>
     </column>
     <column id="76" parent="29" name="admin">
-      <state-number>1545906</state-number>
+      <state-number>1884009</state-number>
       <data-type>boolean|0</data-type>
       <default-expression>false</default-expression>
     </column>
     <column id="77" parent="29" name="activation_digest">
-      <state-number>1545907</state-number>
+      <state-number>1884010</state-number>
       <data-type>varchar|0</data-type>
     </column>
     <column id="78" parent="29" name="activated">
-      <state-number>1545907</state-number>
+      <state-number>1884010</state-number>
       <data-type>boolean|0</data-type>
       <default-expression>false</default-expression>
     </column>
     <column id="79" parent="29" name="activated_at">
-      <state-number>1545907</state-number>
+      <state-number>1884010</state-number>
       <data-type>timestamp|0</data-type>
     </column>
     <column id="80" parent="29" name="reset_digest">
-      <state-number>1545908</state-number>
+      <state-number>1884011</state-number>
       <data-type>varchar|0</data-type>
     </column>
     <column id="81" parent="29" name="reset_sent_at">
-      <state-number>1545908</state-number>
+      <state-number>1884011</state-number>
       <data-type>timestamp|0</data-type>
     </column>
     <index id="82" parent="29" name="users_pkey">
-      <object-id>847773</object-id>
+      <object-id>1026539</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <index id="83" parent="29" name="index_users_on_email">
-      <object-id>847775</object-id>
+      <object-id>1026541</object-id>
       <columns>email</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <key id="84" parent="29" name="users_pkey">
-      <object-id>847774</object-id>
+      <object-id>1026540</object-id>
       <columns>id</columns>
       <underlying-index>users_pkey</underlying-index>
       <primary>1</primary>

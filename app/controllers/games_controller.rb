@@ -13,12 +13,16 @@ class GamesController < ApplicationController
   end
 
   def create
+    game_score = Rails.configuration.x.max_game_score-current_user.games.where("created_at >= ?", Time.zone.now.beginning_of_day).count
+    modified_game_params = game_params
+    modified_game_params["game_score"] = game_score
+
     @game = current_user.games.build(game_params)
     if @game.save
       flash[:success] = "Game created!"
       redirect_to root_url
     else
-      render 'static_pages/home'
+      redirect_to root_url
     end
   end
 

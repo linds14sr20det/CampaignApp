@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @games = @user.games.paginate(page: params[:page], :per_page => 12)
+    @games = @user.games.order('created_at DESC').paginate(page: params[:page], :per_page => 12)
     @armies = Army.all
     redirect_to(root_url) unless @user.activated?
   end
