@@ -14,10 +14,11 @@ class GamesController < ApplicationController
 
   def create
     game_score = Rails.configuration.x.max_game_score-current_user.games.where("created_at >= ?", Time.zone.now.beginning_of_day).count
+    game_score = [[5, game_score].min, 0].max
     modified_game_params = game_params
     modified_game_params["game_score"] = game_score
 
-    @game = current_user.games.build(game_params)
+    @game = current_user.games.build(modified_game_params)
     if @game.save
       flash[:success] = "Game created!"
       redirect_to root_url

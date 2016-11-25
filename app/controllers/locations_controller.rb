@@ -13,11 +13,11 @@ class LocationsController < ApplicationController
   def show
     @games = @location.games.where('game_score > 0').order('created_at DESC').paginate(page: params[:page], :per_page => 12)
     @armies = Army.all
-    @total = @location.games.count #this should be the sum of the gamescore rows for this location
+    @total = @location.games.sum(:game_score) #this should be the sum of the gamescore rows for this location
     @army_stats = {}
     @location.games.each do |game|
       winning_army_id = game.win ? game.user_army_id : game.opponent_army_id
-      @army_stats[Army.find(winning_army_id).name] += @army_stats[Army.find(winning_army_id).game_score].to_i #this needs to be gamescore, not just an increment
+      @army_stats[Army.find(winning_army_id).name] = @army_stats[Army.find(winning_army_id).name].to_i + game.game_score #this needs to be gamescore, not just an increment
     end
 
   end
