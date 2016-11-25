@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   before_action :logged_in_user, only: [:new, :create, :destroy]
 
   def index
-    @games = Game.paginate(page: params[:page])
+    @games = Game.where('game_score > 0').order('created_at DESC').paginate(page: params[:page], :per_page => 12)
     @armies = Army.all
   end
 
