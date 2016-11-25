@@ -2,16 +2,9 @@
 
 <h1>Campaign Map</h1>
 
-<script type="text/javascript" src="maphilight.js"></script>
-<script>
-  jQuery(function() {
-    jQuery('#campaignmap').maphilight();
-  });
-</script>
-
 <div class="row">
   <div class="col-lg-12 map">
-    <%= image_tag('map1.png', :class => 'map', :id => 'campaignmap', :usemap => '#campaignmapAreas') %>
+    <%= image_tag('map1.png', :class => 'map img-responsive', :id => 'campaignmap', :usemap => '#campaignmapAreas') %>
     <map name="campaignmapAreas" id="campaignmapAreas">
 
       <area  href="/locations/1" shape="poly"
@@ -47,3 +40,10 @@
     </map>
   </div>
 </div>
+
+<script>
+  jQuery(function() {
+    jQuery('#campaignmap').maphilight();
+    $('#campaignmap').rwdImageMaps();
+  });
+</script>
