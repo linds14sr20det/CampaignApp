@@ -290,4 +290,31 @@ span.picture {
   opacity: .5;
 }
 
+@media(max-width:767px){}
+@media(min-width:768px){
+  .button-in-title {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  #graph-container {
+    margin-bottom: -100px;
+  }
+  .sg-games-games-create {
+    float: none;
+
+  }
+}
+@media(min-width:992px){
+  .button-in-title {
+    position:absolute;
+    top: 20px;
+    right:0;
+  }
+}
+@media(min-width:1200px){}
+
 

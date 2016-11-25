@@ -1,7 +1,7 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script>
   $(function () {
-    Highcharts.chart('container', {
+    Highcharts.chart('graph-container', {
       chart: {
         plotBackgroundColor: null,
         plotBorderWidth: 0,
@@ -14,7 +14,7 @@
         text: 'Controlling<br>Faction',
         align: 'center',
         verticalAlign: 'middle',
-        y: 40
+        y: 100
       },
       tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -23,7 +23,7 @@
         pie: {
           dataLabels: {
             enabled: true,
-            distance: -50,
+            distance: -30,
             style: {
               fontWeight: 'bold',
               color: 'white'
@@ -31,7 +31,7 @@
           },
           startAngle: -90,
           endAngle: 90,
-          center: ['50%', '75%']
+          center: ['50%', '70%']
         }
       },
       series: [{
@@ -47,7 +47,7 @@
             ["None", 1]
             <%end%>
         ]
-      }]
+      }],
     });
   });
 
@@ -56,8 +56,11 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-offset-3 col-md-6">
     <div class="title-with-button"><h1><%= @location.name %></h1></div>
+  </div>
+
+  <div class="col-md-3">
     <div class="button-in-title">
       <%= link_to "Report results for this location!", new_game_path({:id => @location.id }), class: "btn btn-lg btn-primary sg-games-games-create"%>
     </div>
@@ -66,7 +69,7 @@
 
 <div class="row">
   <div class="col-md-4">
-    <div id="container" style="min-width: 510px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+    <div id="graph-container" style="min-width: 400px; height: 300px; max-width: 600px; margin: 0 auto"></div>
   </div>
   <div class="col-md-1"></div>
   <div class="col-md-7">
