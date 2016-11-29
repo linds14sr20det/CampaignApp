@@ -5,7 +5,6 @@ class Game < ApplicationRecord
   belongs_to :location
   validates :user_id, presence: true
   validates :location_id, presence: true
-  validates :win, presence: { message: "or loss must be chosen" }
   validates :user_army_id, presence: true
   validates :opponent_army_id, presence: true
 end
