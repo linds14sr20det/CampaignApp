@@ -6,6 +6,22 @@ class LocationsController < ApplicationController
   # GET /locations.json
   def index
     @locations = Location.all
+    @locations.each do |location|
+      total = location.games.sum(:game_score) #this should be the sum of the gamescore rows for this location
+      total = 1 if total == 0
+      all_army_stats = {}
+      location.games.each do |game|
+        winning_army_id = game.win ? game.user_army_id : game.opponent_army_id
+        all_army_stats[Army.find(winning_army_id).color] = (all_army_stats[Army.find(winning_army_id).name].to_i + game.game_score)/total #this needs to be gamescore, not just an increment
+      end
+      if total > 0
+        kvp = all_army_stats.max_by{ |k,v| v }
+      else
+        kvp = ['grey', 0.5]
+      end
+      location.controlling_army = kvp
+    end
+    binding.pry
   end
 
   # GET /locations/1
