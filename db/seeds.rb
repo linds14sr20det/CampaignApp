@@ -1,53 +1,58 @@
 # Create Locations and Armies. These shouldn't change after initial deploy
 
 easternport = Location.find_or_initialize_by(name: "Eastern Port")
+easternport.id = 1
 easternport.name = "Eastern Port"
 easternport.save!
 
 spaceport = Location.find_or_initialize_by(name: "Space Port")
+spaceport.id = 2
 spaceport.name = "Space Port"
 spaceport.save!
 
 mesaprime = Location.find_or_initialize_by(name: "Mesa Prime")
+mesaprime.id = 3
 mesaprime.name = "Mesa Prime"
 mesaprime.save!
 
 habblocks = Location.find_or_initialize_by(name: "Hab Blocks")
+habblocks.id = 4
 habblocks.name = "Hab Blocks"
 habblocks.save!
 
 oldcity = Location.find_or_initialize_by(name: "Old City")
+oldcity.id  = 5
 oldcity.name = "Old City"
 oldcity.save!
 
 ucm = Army.find_or_initialize_by(name: "UCM")
 ucm.name = "UCM"
-ucm.color = "green"
+ucm.color = "489346"
 ucm.save!
 
 scourge = Army.find_or_initialize_by(name: "Scourge")
 scourge.name = "Scourge"
-scourge.color = "purple"
+scourge.color = "b135ba"
 scourge.save!
 
 phr = Army.find_or_initialize_by(name: "PHR")
 phr.name = "PHR"
-phr.color = "blue"
+phr.color = "49c2ff"
 phr.save!
 
 shaltari = Army.find_or_initialize_by(name: "Shaltari")
 shaltari.name = "Shaltari"
-shaltari.color = "orange"
+shaltari.color = "ff6600"
 shaltari.save!
 
 resistance = Army.find_or_initialize_by(name: "Resistance (Feral)")
 resistance.name = "Resistance (Feral)"
-resistance.color = "red"
+resistance.color = "bc1200"
 resistance.save!
 
 resistance1 = Army.find_or_initialize_by(name: "Resistance (Allied)")
 resistance1.name = "Resistance (Allied)"
-resistance1.color = "lightgreen"
+resistance1.color = "bbf9bf"
 resistance1.save!
 
 admin = User.find_or_initialize_by(email:  "stephen.r.lind@gmail.com")
