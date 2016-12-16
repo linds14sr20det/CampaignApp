@@ -21,7 +21,6 @@ class LocationsController < ApplicationController
       end
       location.controlling_army = kvp
     end
-    binding.pry
   end
 
   # GET /locations/1
